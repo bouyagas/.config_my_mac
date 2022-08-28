@@ -1,0 +1,1624 @@
+cc0256df40cbc924af2b31aeccb869b0|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/dashboard/DashBoard.js|31|24|v|javascriptreact
+	signin
+b87256045e720883db5ac3c756ac6cd4|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/dashboard/DashBoard.js|30|44|V|javascriptreact
+	          Welcome to {currentUser.username..split(/(?=[A-Z])/)}
+	        </h1>
+fcc10ef5cc4bf011966f68201c4a169d|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/dashboard/DashBoard.js|31|11|V|javascriptreact
+	          Welcome to {_.captitable(currentUser.username)}
+c1b2c252ec82ca6955b2a8f13a6559f3|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/NavBar.js|38|7|V|javascriptreact
+	      </Button>
+fa7f08233358e9b466effa1328168527|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/HomePage.js|30|1|V|javascriptreact
+	kkkk
+c69a5db17e76be2893226c2639fa4b23|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/NavBar.js|39|9|V|javascriptreact
+	        lusername}
+321d0295ea4ba960e4015dc9b0d98bb8|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/NavBar.js|30|11|V|javascriptreact
+	    user: { username },
+fb8c06b164f4f06a75980dff867b07b6|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/NavBar.js|32|11|V|javascriptreact
+	          {user.username}
+9d37082a1aee431ffee254cb0091b72d|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/auth/SignIn.js|88|5|V|javascriptreact
+	              required
+9ab1d71e637c514bb758cae9c6303f6f|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/HomePage.js|31|5|v|javascriptreact
+	<Redirect to="/dashboard" /> 
+ff7e548c6c2941372fad51e9de5b0a78|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/HomePage.js|27|13|v|javascriptreact
+	enticate
+a8cfde6331bd59eb2ac96f8911c4b666|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/HomePage.js|54|22|v|javascriptreact
+	object
+8d185a253771928e5ce34cb82acc96d0|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/Loading.js|14|1|V|javascriptreact
+	export default function CircularIndeterminate() {
+608e0bfb63f5f90ff409c376e8718ec7|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/Loading.js|14|1|v|javascriptreact
+	export default function CircularIndeterminate
+e44b32782b9194ca4707b52ef33503b7|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/Loading.js|20|7|V|javascriptreact
+	      <CircularProgress color="secondary" />
+cdd638e00095e76c42db80d69dfdec30|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/dashboard/DashBoard.js|24|22|v|javascriptreact
+	currentUser
+0ef071d944066d7297c479d9002a9b79|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageReducer.js|2|7|v|javascriptreact
+	POSTS
+5beca849f654a66481df37c903718d0b|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageReducer.js|3|3|v|javascriptreact
+	POST_ERROR
+cc1079e1ae2a4cd0025b36270585f296|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageReducer.js|4|3|V|javascriptreact
+	  ATE_LIKES,
+a02439ec229d8be0e74b0c1602392310|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageReducer.js|4|10|v|javascriptreact
+	POST
+525aa333d7d7ae0093c5a8cc1bef9ea8|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageReducer.js|7|3|v|javascriptreact
+	ADD_COMMENT,
+	  REMOVE_COMMENT,
+	
+1d4b04ae21da3098cb51a577e7c4fa7f|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageReducer.js|16|1|V|javascriptreact
+	 (state = initialState, action) {
+	  const { type, payload } = action;
+703c84ac587547aa4cf5caf4c239b62d|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageReducer.js|50|2|v|javascriptreact
+	   case UPDATE_LIKES:
+	      return {
+	        ...state,
+	        pots: state.posts.map((post) =>
+	          post._id === payload.id ? { ...post, likes: payload.likes } : post
+	        ),
+	        loading: false,
+	      };
+	    case ADD_COMMENT:
+	      return {
+	        ...state,
+	        post: { ...state.post, comments: payload },
+	        loading: false,
+	      };
+	    case REMOVE_COMMENT:
+	      return {
+	        ...state,
+	        post: {
+	          ...state.post,
+	          comments: state.post.comments.filter(
+	            (comment) => comment._id !== payload
+	          ),
+	        },
+	        loading: false,
+	      };
+	
+463b614c2abde463443e55eac713cb59|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageReducer.js|20|10|v|javascriptreact
+	GET_POSTS
+7a13975299a8f0833caf5aaf7d3873d9|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageReducer.js|26|10|v|javascriptreact
+	GET_POST
+1633d782d4cca986f8ff0788dc1cf6f8|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageReducer.js|32|10|v|javascriptreact
+	ADD_POST
+4a30b662619387ee14598532d74126a7|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageReducer.js|38|10|v|javascriptreact
+	DELETE_POST
+9515d1aa0f561a13d152e76fa8f27160|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageAction.js|4|1|v|javascriptreact
+	  GET_POSTS,
+	  POST_ERROR,
+	  UPDATE_LIKES,
+	  DELETE_POST,
+	  ADD_POST,
+	  GET_POST,
+	  ADD_COMMENT,
+	  REMOVE_COMMENT
+	
+5dc52ca9ffdc26147075682c92a0a853|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageAction.js|12|17|v|javascriptreact
+	Posts
+cfbaecd5df955b636f834fb860346f23|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageAction.js|28|1|V|javascriptreact
+	// Add like
+	export const addLike = (id) => async (dispatch) => {
+8be2a5deeb37fd83d77cae94ac0b0d41|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageAction.js|28|1|v|javascriptreact
+	// Add like
+	export const addLike = (id) => async (dispatch) => {
+	  try {
+	    const res = await axios.put(`/api/posts/like/${id}`);
+	
+	    dispatch({
+	      type: UPDATE_LIKES,
+	      payload: { id, likes: res.data },
+	    });
+	  } catch (err) {
+	    dispatch({
+	      type: POST_ERROR,
+	      payload: { msg: err.response.statusText, status: err.response.status },
+	    });
+	  }
+	};
+	
+	// Remove like
+	export const removeLike = (id) => async (dispatch) => {
+	  try {
+	    const res = await axios.put(`/api/posts/unlike/${id}`);
+	
+	    dispatch({
+	      type: UPDATE_LIKES,
+	      payload: { id, likes: res.data },
+	    });
+	  } catch (err) {
+	    dispatch({
+	      type: POST_ERROR,
+	      payload: { msg: err.response.statusText, status: err.response.status },
+	    });
+	  }
+	};
+	
+	
+aa163888e86e15e3580cc8c43899ee7d|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageAction.js|28|1|V|javascriptreact
+	// Delete post
+03d947a2158373c3b9d74325850cb8b9|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageAction.js|28|20|v|javascriptreact
+	Post
+f9eb7c99977b19c5a5cc5affc1db6556|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageAction.js|45|1|V|javascriptreact
+	 Add post
+bb9e739d0732e10f954f16edac25b362|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageAction.js|75|13|v|javascriptreact
+	GET_POST,
+ff324dc7e7cfa3c331b18e43b3bed292|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageAction.js|69|1|V|javascriptreact
+	// Get post
+e351f80850b39e8fb710a9efae1f768f|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageAction.js|84|1|V|javascriptreact
+	
+	// Add comment
+712c76103ded92713a4b6ecf41ee25df|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageAction.js|84|1|v|javascriptreact
+	
+	// Add comment
+	export const addComment = (postId, formData) => async (dispatch) => {
+	  const config = {
+	    headers: {
+	      "Content-Type": "application/json",
+	    },
+	  };
+	
+	  try {
+	    const res = await axios.post(
+	      `/api/posts/comment/${postId}`,
+	      formData,
+	      config
+	    );
+	
+	    dispatch({
+	      type: ADD_COMMENT,
+	      payload: res.data,
+	    });
+	
+	    dispatch(setAlert("Comment Added", "success"));
+	  } catch (err) {
+	    dispatch({
+	      type: POST_ERROR,
+	      payload: { msg: err.response.statusText, status: err.response.status },
+	    });
+	  }
+	};
+	
+	// Delete comment
+	export const deleteComment = (postId, commentId) => async (dispatch) => {
+	  try {
+	    await axios.delete(`/api/posts/comment/${postId}/${commentId}`);
+	
+	    dispatch({
+	      type: REMOVE_COMMENT,
+	      payload: commentId,
+	    });
+	
+	    dispatch(setAlert("Comment Removed", "success"));
+	  } catch (err) {
+	    dispatch({
+	      type: POST_ERROR,
+	      payload: { msg: err.response.statusText, status: err.response.status },
+	    });
+	  }
+	};
+d7beea1b7509c57883738631eaeba8b9|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageAction.js|13|34|v|javascriptreact
+	/api/posts
+991232c37559d9a216d63f628672f2f9|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageAction.js|9|9|v|javascriptreact
+	./types
+5dabd4dd1d0c6d2e00f8b41e8d5a81be|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageAction.js|64|5|V|javascriptreact
+	    dispatch(setAlert("Post Created", "success"));
+e0e8b1de3583536cb5f8e70daf86144f|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|3|7|v|javascriptreact
+	Beverages
+17fcd79944593418273bec4ec14d998b|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|7|1|V|javascriptreact
+	
+	export default Beverages;
+b80320fa707be98b8c1ea98ae5385d23|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|10|3|V|javascriptreact
+	  className: PropTypes.string,
+6f66e878c62db60568a3487869695820|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|10|3|v|javascriptreact
+	className
+b45cffe084dd3d20d928bee85e7b0f21|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|10|27|v|javascriptreact
+	string
+f780d929eebf376d81b4bb6840709bc0|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/NavBar.js|30|7|V|javascriptreact
+	      <Button color="inherit">
+	        <Link to="/dashboard" className={classes.links}>
+ed8aaab254a5c9ee5a495c2b6c2594cf|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/NavBar.js|37|11|v|javascriptreact
+	ashbroad
+dc7161be3dbf2250c8954e560cc35060|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/NavBar.js|36|20|v|javascriptreact
+	dashboard
+8cb0318b505a82f4bcee1f5f98527137|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/beverage/beverageTypes.js|2|32|v|javascriptreact
+	GET_BEVERAGE
+40387c661381f9b6ad43df78340569cd|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/NavBar.js|50|6|v|javascriptreact
+	 <Button color="inherit">
+	        <Link to="/" className={classes.links}>
+	          Beverage Feeds
+	        </Link>
+	      </Button>
+	
+fa56defe174b16144a4dbb2bdd6daef1|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|9|10|V|javascriptreact
+	  return <Fragment>he</Fragment>;
+a4f89a696af59df01b2bdef060b80cd1|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/App.js|49|15|v|javascriptreact
+	<PrivateRoute exact path="/beverages" conponent={Beverages} />
+d7e66fae658b28b407cae9e4432f564d|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|8|3|V|javascriptreact
+	  useEffect(() => {
+	    getBeverages();
+e64935894319758260a17f63019cf9c4|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|8|3|V|javascriptreact
+	  }, [Beverages]);
+06ca4c36ad85f722a08a53d658bdb562|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/App.js|12|1|V|javascriptreact
+	mport Beverages from "./components/beverage/Beverages";
+	import DashBoard from "./components/dashboard/DashBoard";
+0efe8590449d70dcbf243cce7eca253c|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/App.js|12|1|V|javascriptreact
+	mport Beverages from "./components/beverage/Beverages";
+ed055ea640a675bfbc8c0ef14f388a23|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/App.js|47|15|V|javascriptreact
+	              <PrivateRoute exact path="/beverage" conponent={Beverages} />
+ca96a2b1f5ad6cb35a62fc74805b7e01|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/App.js|11|1|V|javascriptreact
+	port Beverages from "./components/beverage/Beverages";
+a7cab12227cbc3d6d1457b1f320e3ef3|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|4|20|V|javascriptreact
+	import { getBeverage} from "../../redux/beverage/beverageAction";
+	
+ab1ccd7f86e1ff06a5ecd2abd6a4ba84|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/Loading.js|3|1|v|javascriptreact
+	import CircularProgress from "@material-ui/core/CircularProgress";
+	
+	const useStyles = makeStyles((theme) => ({
+	  root: {
+	    display: "flex",
+	    "& > * + *": {
+	      marginLeft: theme.spacing(2),
+	    },
+	  },
+	}));
+	
+c67130442523c821de60550bc5956a33|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/Loading.js|19|25|V|javascriptreact
+	 <LinearProgress />     <CircularProgress />
+ffbe10f71a855a5519bbbf3fa23fe4f4|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|11|44|v|javascriptreact
+	Create Beverage
+d359c6df99b25183d81f7d728b71de0e|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|4|16|v|javascriptreact
+	Form
+e1ae53a0f80a6ec3f3591494bdb61328|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|2|1|v|javascriptreact
+	import { makeStyles } from "@material-ui/core/styles";
+	import LinearProgress from "@material-ui/core/LinearProgress";
+	
+190f5cedab7b9936fd4183177ef6b701|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|2|1|v|javascriptreact
+	
+	const useStyles = makeStyles((theme) => ({
+	  root: {
+	    width: "100%",
+	    "& > * + *": {
+	      marginTop: theme.spacing(1),
+	    },
+	  },
+	}));
+	
+16bfbf9c462762cf1cba4134ec53c504|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|3|7|v|javascriptreact
+	Loading
+7d8554458d37de16cf4c8313bd264f3d|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|12|1|V|javascriptreact
+	k}
+	const mapStateToProps = (state) => ({ isAuth: state.authReduceri });
+734c0dd258d9e76e60befe2ac86785ce|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|49|20|v|javascriptreact
+	Ali Connors
+deeb165ccfa7c7131dcffa2c1ee3b52d|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|2|1|V|javascriptreact
+	import Moment from "react-moment";
+03fdad155b7548884584c7c39b0c5cd2|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|20|15|v|javascriptreact
+	inline
+a81259cef8e959c624df1d456e5d3297|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/layout/NavBar.js|65|25|v|javascriptreact
+	static
+699355db927ffd87610d19cb655a74d8|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|5|1|v|javascriptreact
+	import List from "@material-ui/core/List";
+	import ListItem from "@material-ui/core/ListItem";
+	import Divider from "@material-ui/core/Divider";
+	import ListItemText from "@material-ui/core/ListItemText";
+	import ListItemAvatar from "@material-ui/core/ListItemAvatar";
+	import Avatar from "@material-ui/core/Avatar";
+	import Typography from "@material-ui/core/Typography";
+	
+1940b604c12aae5911396de563a6e80d|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|11|1|v|javascriptreact
+	const useStyles = makeStyles((theme) => ({
+	  root: {
+	    width: "100%",
+	    maxWidth: "36ch",
+	    backgroundColor: theme.palette.background.paper,
+	  },
+	  inline: {
+	    display: "block",
+	  },
+	}));
+	
+12a75de5b2e284c4e85165d85708d12b|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|27|1|V|javascriptreact
+	kj
+	const BeverageItem = ({
+446e6707c46a49fce90d457aa4e1ed84|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|35|36|V|javascriptreact
+	      <List className={classes.root}>
+	        <ListItem alignItems="flex-start">
+ea2b2676c28c0db26d39331a336c6b92|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|36|36|v|javascriptreact
+	start
+1d36bf685e97ebf023524260c2a15eae|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|30|5|v|javascriptreact
+	<div>
+	      <List className={classes.root}>
+	        <ListItem alignItems="flex-end">
+	          <ListItemAvatar>
+	            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+	          </ListItemAvatar>
+	          <ListItemText
+	            primary="Brunch this weekend?"
+	            secondary={
+	              <React.Fragment>
+	                <Typography
+	                  component="span"
+	                  variant="body2"
+	                  className={classes.inline}
+	                  color="textPrimary"
+	                >
+	                  {name}
+	                </Typography>
+	                {" — I'll be in your neighborhood doing errands this…"}
+	              </React.Fragment>
+	            }
+	          />
+	        </ListItem>
+	        <Divider variant="inset" component="li" />
+	      </List>
+	    </div>
+	
+6c875f955bdbfcbd062e6f23c60a6f77|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|31|5|v|javascriptreact
+	  <List className={classes.root}>
+	        <ListItem alignItems="flex-end">
+	          <ListItemAvatar>
+	            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+	          </ListItemAvatar>
+	          <ListItemText
+	            primary="Brunch this weekend?"
+	            secondary={
+	              <React.Fragment>
+	                <Typography
+	                  component="span"
+	                  variant="body2"
+	                  className={classes.inline}
+	                  color="textPrimary"
+	                >
+	                  {name}
+	                </Typography>
+	                {" — I'll be in your neighborhood doing errands this…"}
+	              </React.Fragment>
+	            }
+	          />
+	        </ListItem>
+	        <Divider variant="inset" component="li" />
+	      </List>
+	
+678329d6e9982207c39e20255477fa54|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|12|1|v|javascriptreact
+	const useStyles = makeStyles((theme) => ({
+	  root: {
+	    width: "100%",
+	    maxWidth: "36ch",
+	    backgroundColor: theme.palette.background.paper,
+	  },
+	  inline: {
+	    display: "inline",
+	  },
+	}));
+	
+	
+f95a0182140e5cf5335ea1ed259cb435|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|40|9|v|javascriptreact
+	<Grid item xs={12}>
+	          <Paper className={classes.control}>
+	            <Grid container>
+	              <Grid item>
+	                <FormLabel>spacing</FormLabel>
+	                <RadioGroup
+	                  name="spacing"
+	                  aria-label="spacing"
+	                  value={spacing.toString()}
+	                  onChange={handleChange}
+	                  row
+	                >
+	                  {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((value) => (
+	                    <FormControlLabel
+	                      key={value}
+	                      value={value.toString()}
+	                      control={<Radio />}
+	                      label={value.toString()}
+	                    />
+	                  ))}
+	                </RadioGroup>
+	              </Grid>
+	            </Grid>
+	         
+6a93fba3e42c1af0e1b1a5a89e2b6546|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|44|15|V|javascriptreact
+	                <FormLabel>spacing</FormLabel>
+	                <RadioGroup
+2fccf3500a4ca542bae5b3431bdef2a4|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|43|15|v|javascriptreact
+	<Grid item>
+	                <FormLabel>spacing</FormLabel>
+	                <RadioGroup
+	                  name="spacing"
+	                  aria-label="spacing"
+	                  value={spacing.toString()}
+	                  onChange={handleChange}
+	                  row
+	                >
+	                  {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((value) => (
+	                    <FormControlLabel
+	                      key={value}
+	                      value={value.toString()}
+	                      control={<Radio />}
+	                      label={value.toString()}
+	                    />
+	                  ))}
+	                </RadioGroup>
+	              </Grid>
+	
+85eb04efac7dda9f50de18c628722cb7|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|31|5|v|javascriptreact
+	 <List className={classes.root}>
+	        <ListItem alignItems="flex-start">
+	          <ListItemAvatar>
+	            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+	          </ListItemAvatar>
+	          <ListItemText
+	            primary="Brunch this weekend?"
+	            secondary={
+	              <React.Fragment>
+	                <Typography
+	                  component="span"
+	                  variant="body2"
+	                  className={classes.inline}
+	                  color="textPrimary"
+	                >
+	                  {name}
+	                </Typography>
+	                {" — I'll be in your neighborhood doing errands this…"}
+	              </React.Fragment>
+	            }
+	          />
+	        </ListItem>
+	        <Divider variant="inset" component="li" />
+	      </List>
+139c22e6b8736e606b71688d0fc0bbe3|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|5|1|v|javascriptreact
+	import List from "@material-ui/core/List";
+	import ListItem from "@material-ui/core/ListItem";
+	import Divider from "@material-ui/core/Divider";
+	import ListItemText from "@material-ui/core/ListItemText";
+	import ListItemAvatar from "@material-ui/core/ListItemAvatar";
+	import Avatar from "@material-ui/core/Avatar";
+	import Typography from "@material-ui/core/Typography";
+	
+	const useStyles = makeStyles((theme) => ({
+	  root: {
+	    width: "100%",
+	    maxWidth: "36ch",
+	    backgroundColor: theme.palette.background.paper,
+	  },
+	  inline: {
+	    display: "inline",
+	  },
+	}));
+	
+b311ba931b24f55f348b2901eb71fb31|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|42|13|v|javascriptreact
+	Word of the Day
+	
+d807ae6a52090d45e3499bc2d862a6c0|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|48|13|v|javascriptreact
+	adjective
+6b8859493030235070ccd37a51450d76|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|53|14|v|javascriptreact
+	'"a benevolent smile"'
+f3c05b039270eeef926d8b66aa98c88b|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|53|13|V|javascriptreact
+	            {instruction}
+e049012c69900e3d32ddc2847d6088b0|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|54|14|v|javascriptreact
+	ingredients
+dcbe3e4de6df29cbfed64dd2bcd7fe5b|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|58|31|v|javascriptreact
+	>Learn
+f5395c9793af8a11b406ca7c1ac70da9|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|58|32|v|javascriptreact
+	Learn More
+870447646a431e4613de033cb37370ca|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|4|1|v|javascriptreact
+	import { makeStyles } from "@material-ui/core/styles";
+	import Card from "@material-ui/core/Card";
+	import CardActions from "@material-ui/core/CardActions";
+	import CardContent from "@material-ui/core/CardContent";
+	import Button from "@material-ui/core/Button";
+	import Typography from "@material-ui/core/Typography";
+	
+	
+4187ec0ac88fa87d8ea441cba2271875|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|5|1|v|javascriptreact
+	import Card from "@material-ui/core/Card";
+	import CardActions from "@material-ui/core/CardActions";
+	import CardContent from "@material-ui/core/CardContent";
+	import Button from "@material-ui/core/Button";
+	import Typography from "@material-ui/core/Typography";
+	
+3b5a668ce88dbf458c72c9efb21e9e94|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|20|1|v|javascriptreact
+	const useStyles = makeStyles({
+	  root: {
+	    minWidth: 375,
+	  },
+	  bullet: {
+	    display: "inline-block",
+	    margin: "0 2px",
+	    transform: "scale(0.8)",
+	  },
+	  title: {
+	    fontSize: 14,
+	  },
+	  pos: {
+	    marginBottom: 12,
+	  },
+	});
+	
+cd3b13f7f3ba914ee1a7fa4dbff3715a|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|60|7|v|javascriptreact
+	<Card className={classes.root} variant="outlined">
+	        <CardContent>
+	          <Typography
+	            className={classes.title}
+	            color="textSecondary"
+	            gutterBottom
+	          >
+	            {name}
+	          </Typography>
+	          <Typography variant="h5" component="h2">
+	            {category}
+	          </Typography>
+	          <Typography className={classes.pos} color="textSecondary">
+	            {alcohol_content}
+	          </Typography>
+	          <Typography variant="body1" component="p">
+	            {ingredients}
+	          </Typography>
+	          <Typography variant="body2" component="p">
+	            {instruction}
+	          </Typography>
+	        </CardContent>
+	        <CardActions>
+	          <Button size="small">delete</Button>
+	        </CardActions>
+	      </Card>
+	
+3871a0c7ee604fc0f3f43d84e270768e|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|10|1|v|javascriptreact
+	const useStyles = makeStyles((theme) => 
+	
+	cardGrid: {
+	    paddingTop: theme.spacing(8),
+	    paddingBottom: theme.spacing(8),
+	  },
+	
+	)
+	
+5e4d86fab053d616c448b6c2a7bb7050|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|57|10|V|javascriptreact
+	          <Grid container spacing={4}>
+00bb17236ecbfa299b0b436f52082c2e|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|60|10|V|javascriptreact
+	          </Grid>
+90c932d4523e3c3d57ed9cf35d35d183|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|58|10|v|javascriptreact
+	
+	      <Container className={classes.cardGrid} maxWidth="md">
+	        <Grid container spacing={4}>
+	          <Grid item xs={12} sm={6} md={4}>
+	            <Card className={classes.card}>
+	              <CardMedia
+	                className={classes.cardMedia}
+	                image="https://source.unsplash.com/random"
+	                title="Image title"
+	              />
+	              <CardContent className={classes.cardContent}>
+	                <Typography gutterBottom variant="h5" component="h2">
+	                  Heading
+	                </Typography>
+	                <Typography>
+	                  This is a media card. You can use this section to describe the
+	                  content.
+	                </Typography>
+	              </CardContent>
+	              <CardActions>
+	                <Button size="small" color="primary">
+	                  View
+	                </Button>
+	                <Button size="small" color="primary">
+	                  Edit
+	                </Button>
+	              </CardActions>
+	            </Card>
+	          </Grid>
+	        </Grid>
+	      </Container>
+	    
+32125540a649ecc646413c37c588775d|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|58|1|V|javascriptreact
+	<div>
+0a3a0b592b9c285e050805307cee87c2|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|59|1|V|javascriptreact
+	</div>
+7f48faae4f4d86c46e56c892a7b57570|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|141|6|v|javascriptreact
+	 {/* Footer */}
+	      <footer className={classes.footer}>
+	        <Typography variant="h6" align="center" gutterBottom>
+	          Footer
+	        </Typography>
+	        <Typography
+	          variant="subtitle1"
+	          align="center"
+	          color="textSecondary"
+	          component="p"
+	        >
+	          Something here to give the footer a purpose!
+	        </Typography>
+	        <Copyright />
+	      </footer>
+	      {/* End footer */}
+	
+868f6f7e8c6eb190185c73c8d3b8189b|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|60|6|v|javascriptreact
+	 <AppBar position="relative">
+	        <Toolbar>
+	          <CameraIcon className={classes.icon} />
+	          <Typography variant="h6" color="inherit" noWrap>
+	            Album layout
+	          </Typography>
+	        </Toolbar>
+	      </AppBar>
+	
+2b31d7c36a331027f20c16c971824d55|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|63|6|v|javascriptreact
+	     <Container maxWidth="sm">
+	            <Typography
+	              component="h1"
+	              variant="h2"
+	              align="center"
+	              color="textPrimary"
+	              gutterBottom
+	            >
+	              Album layout
+	            </Typography>
+	            <Typography
+	              variant="h5"
+	              align="center"
+	              color="textSecondary"
+	              paragraph
+	            >
+	              Something short and leading about the collection below—its
+	              contents, the creator, etc. Make it short and sweet, but not too
+	              short so folks don&apos;t simply skip over it entirely.
+	            </Typography>
+	            <div className={classes.heroButtons}>
+	              <Grid container spacing={2} justifyContent="center">
+	                <Grid item>
+	                  <Button variant="contained" color="primary">
+	                    Main call to action
+	                  </Button>
+	                </Grid>
+	                <Grid item>
+	                  <Button variant="outlined" color="primary">
+	                    Secondary action
+	                  </Button>
+	                </Grid>
+	              </Grid>
+	            </div>
+	          </Container>
+	
+bc5e40c669d3d1b9ad03129f0d8cb7cc|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|63|6|V|javascriptreact
+	        <Container className={classes.cardGrid} maxWidth="md">
+27b4a25a21e574b04af081f447355739|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|62|9|V|javascriptreact
+	        <div </div>
+1bf01ceaaeaee0a723d836eacf5110ea|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|6|1|V|javascriptreact
+	import CameraIcon from "@material-ui/icons/PhotoCamera";
+9f1b1a683888696cddbe07bab3957e79|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|12|1|V|javascriptreact
+	import Toolbar from "@material-ui/core/Toolbar";
+4c000b7a11d7e494cd48d977565154f6|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|12|1|V|javascriptreact
+	 import Toolbar from "@material-ui/core/Toolbar";
+02d67e030994575ce19ea3c965428bb9|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|14|1|V|javascriptreact
+	import Link from "@material-ui/core/Link";
+038cdaf249c88b2daebac731cc1040a4|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|29|20|v|javascriptreact
+	const BeverageFrom = () => {
+	  return <h1>Create Beverage</h1>;
+	};
+	
+	export default BeverageFrom;
+67bbe91198f8c512e8803d538bd75adf|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|62|25|v|javascriptreact
+	SignInSide
+023d0939e519fec4ef19fcc8dc7ce751|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|58|9|V|javascriptreact
+	        <Container maxWidth="md">
+2552dcdacde6a8242da692dd2cb050f7|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|57|9|V|javascriptreact
+	        {/* Hero unit */}
+c28c2ea9d333c9607d068103445884c8|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|57|9|V|javascriptreact
+	          {/* End hero unit */}
+39167d4a16785c44c5262afe8128f450|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|85|9|V|javascriptreact
+	        </Container>
+9f095130ed254dfc3e0074a7b2af4592|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|57|9|V|javascriptreact
+	        <Grid container direction="row" spacing={10}>
+a3e74d07f80dcfd2078787bcd248e6d1|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|83|9|V|javascriptreact
+	        </Grid>
+19e1bc4ca2381ed504fb2876d3703e69|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|62|13|V|javascriptreact
+	            direction="row"
+fb582b55af86f4c9b600387104577b0a|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|62|12|v|javascriptreact
+	 direction="row"
+	            justifyContent="center"
+	            alignItems="center"
+	            spacing={10}
+	
+10259cffe65ebe8438622e32c9531c0a|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|62|12|v|javascriptreact
+	 direction="row"
+	            justifyContent="center"
+	            alignItems="center"
+	
+b2d0ea4ebc12573a09be1d0c5417fed9|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|61|54|V|javascriptreact
+	            <Grid direction="row" item xs={6} sm={2} md={7}>
+4f3f6d7c891705667eace24d1649fbdd|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|60|39|V|javascriptreact
+	          <Grid container spacing={10}>
+	              <Card className={classes.card}>
+b2aa7a8720b467704103ceb6e253cf80|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|34|27|v|javascriptreact
+	https://source.unsplash.com/random
+967451f952cc553bb86de0f69458cc31|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|41|5|V|javascriptreact
+	    backgroundSize: "cover",
+801510f206a834454c921c612f4ecdb2|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|41|5|V|javascriptreact
+	    backgroundPosition: "center",
+c2475a1a199959caa1cdb21411259cef|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|101|12|v|javascriptreact
+	 <FormControlLabel
+	              control={<Checkbox value="remember" color="primary" />}
+	              label="Remember me"
+	            />
+	
+43c94c16c6a83d92b19311b8141b5e89|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|110|12|v|javascriptreact
+	 <Grid container>
+	              <Grid item xs>
+	                <Link href="#" variant="body2">
+	                  Forgot password?
+	                </Link>
+	              </Grid>
+	              <Grid item>
+	                <Link href="#" variant="body2">
+	                  {"Don't have an account? Sign Up"}
+	                </Link>
+	              </Grid>
+	            </Grid>
+	            <Box mt={5}>
+	              <Copyright />
+	            </Box>
+	
+17aaafef1defaa3c9ff4b3e32d8ec4e4|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|6|1|V|javascriptreact
+	import FormControlLabel from "@material-ui/core/FormControlLabel";
+eec095ac435d8d010683ff1d60c5ef9f|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|6|1|V|javascriptreact
+	import Checkbox from "@material-ui/core/Checkbox";
+5778f797a2d4f5d4ed04290de510bada|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|8|1|V|javascriptreact
+	import Box from "@material-ui/core/Box";
+f4d16d796c87fbbba33af37672848f64|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|13|1|v|javascriptreact
+	function Copyright() {
+	  return (
+	    <Typography variant="body2" color="textSecondary" align="center">
+	      {"Copyright © "}
+	      <Link color="inherit" href="https://material-ui.com/">
+	        Your Website
+	      </Link>{" "}
+	      {new Date().getFullYear()}
+	      {"."}
+	    </Typography>
+	  );
+	}
+	
+094edf6ea3b061562beef44f6983a6e1|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|56|10|v|javascriptreact
+	 <Avatar className={classes.avatar}>
+	            <LockOutlinedIcon />
+	          </Avatar>
+	
+67b0b12818f6dcbdcc20021a81d5af09|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|9|1|V|javascriptreact
+	import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
+eeef33d8be82191022cbaf282172a3d4|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|56|14|v|javascriptreact
+	LockOutlinedIcon
+f61999e9326f8b24b8f5cef664f631d2|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|59|13|V|javascriptreact
+	            Sign in
+dc647eb65e6711e155375218212b3964|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|101|22|v|javascriptreact
+	Password
+7dc15576b9f83aeff5491a6e547b4cf3|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|115|29|v|javascriptreact
+	current-password
+1e13512e557562cc4055e9b902a36e3f|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|112|24|v|javascriptreact
+	gredients
+a4d3b161ce1309df1c4e25df28694b7b|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|125|15|v|javascriptreact
+	Submit
+2c8421b692b38febb38583ba6fc9520e|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|7|9|V|javascriptreact
+	import Grid from "@material-ui/core/Grid";
+d066048395544bef216720f1fc09aec5|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|7|1|V|javascriptreact
+	import Container from "@material-ui/core/Container";
+fd3045c13c68011d646d8db9743bff7a|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|7|1|V|javascriptreact
+	import { makeStyles } from "@material-ui/core/styles";
+	const useStyles = makeStyles((theme) => ({
+72323f8717a0a22ba4f26808d4ea85ff|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/Beverages.js|7|1|v|javascriptreact
+	import { makeStyles } from "@material-ui/core/styles";
+	const useStyles = makeStyles((theme) => ({
+	  icon: {
+	    marginRight: theme.spacing(2),
+	  },
+	  heroContent: {
+	    backgroundColor: theme.palette.background.paper,
+	    padding: theme.spacing(8, 0, 6),
+	  },
+	  heroButtons: {
+	    marginTop: theme.spacing(4),
+	  },
+	  cardGrid: {
+	    paddingTop: theme.spacing(8),
+	    paddingBottom: theme.spacing(8),
+	  },
+	  card: {
+	    height: "100%",
+	    display: "flex",
+	    flexDirection: "column",
+	  },
+	  cardMedia: {
+	    paddingTop: "56.25%", // 16:9
+	  },
+	  cardContent: {
+	    flexGrow: 1,
+	  },
+	  footer: {
+	    backgroundColor: theme.palette.background.paper,
+	    padding: theme.spacing(6),
+	  },
+	}));
+	
+6fa7d45a2a7259c07f680ee01696bd7c|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|57|1|V|javascriptreact
+	        <Grid container spacing={10}>
+a66b170e5ca2bccf7a998f86145791f9|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|25|10|v|javascriptreact
+	import React from "react";
+	import PropTypes from "prop-types";
+	import { connect } from "react-redux";
+	import { makeStyles } from "@material-ui/core/styles";
+	import Button from "@material-ui/core/Button";
+	import Card from "@material-ui/core/Card";
+	import CardActions from "@material-ui/core/CardActions";
+	import CardContent from "@material-ui/core/CardContent";
+	import CardMedia from "@material-ui/core/CardMedia";
+	import CssBaseline from "@material-ui/core/CssBaseline";
+	import Grid from "@material-ui/core/Grid";
+	import Typography from "@material-ui/core/Typography";
+	import Container from "@material-ui/core/Container";
+	
+	const useStyles = makeStyles((theme) => ({
+	  icon: {
+	    marginRight: theme.spacing(2),
+	  },
+	  heroContent: {
+	    backgroundColor: theme.palette.background.paper,
+	    padding: theme.spacing(8, 0, 6),
+	  },
+	  heroButtons: {
+	    marginTop: theme.spacing(4),
+	  },
+	  cardGrid: {
+	    paddingTop: theme.spacing(8),
+	    paddingBottom: theme.spacing(8),
+	  },
+	  card: {
+	    height: "100%",
+	    display: "flex",
+	    flexDirection: "column",
+	  },
+	  cardMedia: {
+	    paddingTop: "56.25%", // 16:9
+	  },
+	  cardContent: {
+	    flexGrow: 1,
+	  },
+	  footer: {
+	    backgroundColor: theme.palette.background.paper,
+	    padding: theme.spacing(6),
+	  },
+	}));
+	
+	const BeverageItem = ({
+	  beverage: { _id, name, category, alcohol_content, ingredients, instruction },
+	  isAuth,
+	}) => {
+	  const classes = useStyles();
+	
+	  return (
+	    <React.Fragment>
+	      <CssBaseline />
+	      <main>
+	        <Grid item xs={12} sm={6}>
+	          <Card className={classes.card}>
+	            <CardMedia
+	              className={classes.cardMedia}
+	              image="https://source.unsplash.com/random"
+	              title="Image title"
+	            />
+	            <CardContent className={classes.cardContent}>
+	              <Typography gutteBottom variant="h5" component="h2">
+	                Heading
+	              </Typography>
+	              <Typography>
+	                This is a media card. You can use this section to describe the
+	                content.
+	              </Typography>
+	            </CardContent>
+	            <CardActions>
+	              <Button size="small" color="primary">
+	                View
+	              </Button>
+	              <Button size="small" color="primary">
+	                Edit
+	              </Button>
+	            </CardActions>
+	          </Card>
+	        </Grid>
+	      </main>
+	    </React.Fragment>
+	  );
+	};
+	
+	BeverageItem.prototypes = {
+	  isAuth: PropTypes.isRequired,
+	  beverage: PropTypes.object.isRequired,
+	};
+	const mapStateToProps = (state) => ({ isAuth: state.authReduceri });
+	export default connect(mapStateToProps, {})(BeverageItem);
+c9283d1b7bfb6a8b5db193d673d904f8|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|63|1|V|javascriptreact
+	
+	export default function Album() {
+c4f8393e0c007b946261398d0314a257|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|64|23|v|javascriptreact
+	Album
+616dcbf1f023801a2e016e860525252b|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|55|1|V|javascriptreact
+	      <CssBaseline />
+706b51ca5318146e0e389648fe7005fe|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|56|7|V|javascriptreact
+	        <Container maxWidth="d">
+a3c0aab0d4f72e7aa6e09a80516c4e85|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|56|7|V|javascriptreact
+	          <Grid container spacing={2}>
+19bd6c8475030ec0e2c76ec08c2f4591|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|60|5|v|javascriptreact
+	  <main>
+	        {/* Hero unit */}
+	        <div }></div>
+	        <Container maxWidth="md">
+	          {/* End hero unit */}
+	          <Grid container spacing={4}>
+	            <Grid item xs={12} sm={6} md={4}>
+	              <Card className={classes.card}>
+	                <CardMedia
+	                  className={classes.cardMedia}
+	                  image="https://source.unsplash.com/random"
+	                  title="Image title"
+	                />
+	                <CardContent className={classes.cardContent}>
+	                  <Typography gutteBottom variant="h5" component="h2">
+	                    Heading
+	                  </Typography>
+	                  <Typography>
+	                    This is a media card. You can use this section to describe
+	                    the content.
+	                  </Typography>
+	                </CardContent>
+	                <CardActions>
+	                  <Button size="small" color="primary">
+	                    View
+	                  </Button>
+	                  <Button size="small" color="primary">
+	                    Edit
+	                  </Button>
+	                </CardActions>
+	              </Card>
+	            </Grid>
+	          </Grid>
+	        </Container>
+	      </main>
+	
+757b9755c533f85e5e907473927f617a|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|6|1|v|javascriptreact
+	import Button from "@material-ui/core/Button";
+	import CameraIcon from "@material-ui/icons/PhotoCamera";
+	import Card from "@material-ui/core/Card";
+	import CardActions from "@material-ui/core/CardActions";
+	import CardContent from "@material-ui/core/CardContent";
+	import CardMedia from "@material-ui/core/CardMedia";
+	import CssBaseline from "@material-ui/core/CssBaseline";
+	import Grid from "@material-ui/core/Grid";
+	import Toolbar from "@material-ui/core/Toolbar";
+	import Typography from "@material-ui/core/Typography";
+	import Container from "@material-ui/core/Container";
+	import Link from "@material-ui/core/Link";
+	
+	const useStyles = makeStyles((theme) => ({
+	  icon: {
+	    marginRight: theme.spacing(2),
+	  },
+	  heroContent: {
+	    backgroundColor: theme.palette.background.paper,
+	    padding: theme.spacing(8, 0, 6),
+	  },
+	  heroButtons: {
+	    marginTop: theme.spacing(4),
+	  },
+	  cardGrid: {
+	    paddingTop: theme.spacing(8),
+	    paddingBottom: theme.spacing(8),
+	  },
+	  card: {
+	    height: "100%",
+	    display: "flex",
+	    flexDirection: "column",
+	  },
+	  cardMedia: {
+	    paddingTop: "56.25%", // 16:9
+	  },
+	  cardContent: {
+	    flexGrow: 1,
+	  },
+	  footer: {
+	    backgroundColor: theme.palette.background.paper,
+	    padding: theme.spacing(6),
+	  },
+	}));
+	
+	
+3277ed354cd46ee7cafed049b63e9ffd|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|40|13|V|javascriptreact
+	            primary="Brunch this weekend?"
+91e71f0793223ef4a1e7831eb940517e|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|40|21|v|javascriptreact
+	"Brunch this weekend?"
+	
+399e3336c03fc43be98d4d5638721b75|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|51|18|v|javascriptreact
+	c — I'll be in your neighborhood doing errands this…"
+59b5a35eb54b240e4b927984fa5aebc4|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageItem.js|51|18|v|javascriptreact
+	" — I'll be in your neighborhood doing errands this…"
+5da618e8e4b89c66fe86e32cdafde142|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|46|15|v|javascriptreact
+	From
+513625530f27dcc71bf455d5ffcbb4c3|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/components/beverage/BeverageForm.js|69|4|V|javascriptreact
+	    e.preventDefault();
+	
+2f5e4362d366b810a2ead64589516c5c|file:///Users/mohamedbgassama/code/project_beveraholic/client/src/redux/auth/authReducer.js|38|5|V|javascriptreact
+	    case SIGN_UP_FAIL:
+9c04ba832418f0927331ecc27a9d28b8|file:///Users/mohamedbgassama/code/elm-project/src/Main.elm|1|1|v|elm
+	import Html exposing(..)
+	
+	
+	
+	main =
+	  text "Hello World"
+a02c83a7dbd96295beaefb72c2bee2de|file:///Users/mohamedbgassama/code/elm-project/src/Main.elm|1|8|v|elm
+	Main
+e39194dc6f69843c4f6be9e64cf4192d|file:///Users/mohamedbgassama/code/elm-project/src/Main.elm|15|1|v|elm
+	main =
+	  text "Hello World"
+907a4ef7a56a18752822908e1f288a23|file:///Users/mohamedbgassama/code/elm-project/src/Main.elm|20|1|V|elm
+	view : Int -> Html Msg
+e2942a04780e223b215eb8b663cf5353|file:///Users/mohamedbgassama/code/elm-project/src/Main.elm|20|6|v|elm
+	count
+2f091ba0b515597e0ebba6a328711f14|file:///Users/mohamedbgassama/rust_project/hello_world/src/main.rs|3|5|V|rust
+	    ii
+a8fceda8ca8bd9741277de82157b8e85|file:///Users/mohamedbgassama/rust_project/hello_world/src/main.rs|2|16|V|rust
+	    std::la::a::
+c8321b8d7e06363690d06309fbdbf05c|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|12|13|V|rust
+	            .service(index)
+88c9e916c19dc1f9efe9470c8c0a1daa|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|1|1|V|rust
+	e actix_web::{App, HttpServer, HttpResponse, Responder, get};
+1a899218879a0b659fbcac5fb27d8dda|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|1|63|V|rust
+	use actix_web::{App, HttpResponse, HttpServer, Responder, web};
+	#[get("/")]
+ecf7ac270aca9cbba95ebf6f05b5198a|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|3|1|v|rust
+	#[get("/")]
+	async fn index() -> impl Responder {
+	    HttpResponse::Ok().body("Hello World!")
+	}
+	
+fd80a3053d4c825b9a054cc62c4828b7|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|13|20|v|rust
+	= HttpServer::new(|| App::new().service(index))
+	        .bind("127.0.0.1:5000")?
+	        .run()
+	        .await
+	}
+f2cfa618b8558b17896fe264631e7a24|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|13|2|V|rust
+	    server = match listenfd.take_tcp_listener(0)? {
+	        Some(listener) => server.listen(listener)?,
+ea5a1cbe764918679997181a3ea281d3|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|15|5|V|rust
+	    }
+4dedc0360ab735efe6658a67f72efb60|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|13|5|v|rust
+	jjj
+	        None => server.bind("127.0.0.1:5000")?,
+	        kk
+	    server.run().await
+	
+18b2fca2ca3847b68c8a32b28d880c9a|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|2|1|V|rust
+	use listenfd::ListenFd;
+952175ed8c4af1cc71a3992f14c2afa4|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|3|1|v|rust
+	#[get("/")]
+	async fn index() -> impl Responder {
+	    HttpResponse::Ok().body("Hello World")
+	}
+	
+fe4065e7c72bc6387f285ffc39b8120c|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|4|1|V|rust
+	#[actix_rt::main]
+f44d1995f45745bbb93d18a0e9ba7303|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|4|1|V|rust
+	async fn main() -> std::io::Result<()> {
+dc0333e150ea94927252c9a1d665434b|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|3|1|V|rust
+	
+	    //    let mut listenfd = ListenFd::from_env();
+3b0c510a177532e46e95bd89a473eaf5|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|1|1|V|rust
+	jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+	
+72d347cf2b10781140998f3cd6362ce2|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|1|1|v|rust
+	jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+	
+	jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+	j
+b7ecdc07f89eb823d66ed071112f2aad|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|5|25|V|rust
+	    HttpResponse::Ok().body("Hello World")
+	}
+1b68b0c7eb21c48a15ca261633e81588|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|19|1|v|rust
+	        .bind("127.0.0.1:8080")?
+	        .run()
+	        .await
+	
+c921dedaa249347a8ea921aa22d753ce|file:///Users/mohamedbgassama/rust_project/rest_api/Cargo.toml|10|1|V|toml
+	actix-rt = "2.2.0"
+6fd93405d6ccea6baaab5bc8a8485d02|file:///Users/mohamedbgassama/rust_project/rest_api/Cargo.toml|10|1|V|toml
+	actix-rt = "2.2.0"
+	listenfd = "0.3.5"
+af5bb33ebab137e1042e0d72ae31fa99|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|3|1|V|rust
+	use log;
+8cf11bc1e38fed1d1139d35ced71d535|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|14|11|V|rust
+	dotenv().ok()
+78cbd6558429c0beb09de6e87cd84a9b|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|24|11|v|rust
+	server.bind("127.0.0.1:8080")?,
+	
+d910233c0667f3b771ef8399f24d6414|file:///Users/mohamedbgassama/rust_project/rest_api/src/main.rs|25|13|v|rust
+	"127.0.0.1:8080"
+2bc9fbf1036cb3e0016ed3f7b69e0e05|file:///Users/mohamedbgassama/rust_project/rest_api/src/user/routes.rs|6|1|V|rust
+	#[get("/find_all")]
+3ac340832f29c11538fbe2d6f75e8bcc|file:///Users/mohamedbgassama/rust_project/rest_api/src/user/routes.rs|48|17|v|rust
+	update
+099af53f601532dbd31e0ea99ffdeb64|file:///Users/mohamedbgassama/rust_project/rest_api/src/user/routes.rs|49|17|v|rust
+	delete
+46a08178595aeae10bae28d4b97c3d81|file:///Users/mohamedbgassama/rust_project/rest_api/src/user/model.rs|3|1|V|rust
+	#[derive(Deserialize, Serialize)]
+323b9054fc8975ef4c95bc8ee26f9a15|file:///Users/mohamedbgassama/rust_project/rest_api/migrations/2021-10-05-181145_create_user/up.sql|1|1|v|sql
+	-- Your SQL goes here
+ae1386114cbffbc565b94d52195d8b11|file:///Users/mohamedbgassama/rust_project/rest_api/migrations/2021-10-05-181145_create_user/down.sql|1|1|v|sql
+	-- This file should undo anything in `up.sql`
+9e09540aee50fab97207168cee95c871|file:///Users/mohamedbgassama/rust_project/rest_api/migrations/2021-10-05-182900_create_user/down.sql|1|20|v|sql
+	- This file should undo anything in `up.sql`
+6c2fa94f771badd15d105bb551263c36|file:///Users/mohamedbgassama/rust_project/rest_api/src/api_error.rs|16|19|V|rust
+	pub fn new(status_ode)
+	
+ef280ce2ebffeabac2e8fecd0df08e35|file:///Users/mohamedbgassama/rust_project/rest_api/src/api_error.rs|38|9|V|rust
+	             error!("{}", self.message),
+	         },
+695d44d97b4862cceaf6004d597f9aaf|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|9|9|v|rust
+	num_list = nums
+	
+cb11c13f15029198425145ee5b4c25b2|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|10|8|v|rust
+	 num_list = nums
+	
+d049279105e085fe8893c781087edd30|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|7|19|v|rust
+	num_list
+ad347a51b417286a71f53a1f3429330c|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|4|1|v|rust
+	    let mut large: i32 = num_list[0];
+	
+	    for nums in num_list {
+	        if nums > large {
+	            large = nums;
+	        }
+	    }
+	    println!("The largest number is {}", large);
+	
+d545120310a9da5972cce88fb53af045|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|7|1|V|rust
+	#[allow(dead_code)]
+f9c01bc5079f4482e19c610cff1b6e89|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|21|1|V|rust
+	impl fmt::Display for i32 {
+	    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+6076fe54a43beaa5f57668a2bf422df3|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|21|1|v|rust
+	impl fmt::Display for i32 {
+	    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+	        write!(f, "({})")
+	    }
+	}
+0d8fc3c1e08e0837305c36fd51a07efa|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|1|1|V|rust
+	use std::fmt;
+091ed6dd85b1ad0f30e69e2fc2293fd1|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|7|1|v|rust
+	fn get_largest<T>(number_list: Vec<T>) -> Option<T>
+	where
+	    T: PartialOrd + Copy,
+	{
+	    let mut large: T = number_list[0];
+	    for nums in number_list {
+	        if nums > large {
+	            large = nums;
+	        }
+	    }
+	
+	    Some(large)
+	}
+1132d0c7ea2bbcb2d0e569c2f4662bf3|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|2|1|v|rust
+	    let num_list: Vec<i32> = vec![1, 24, 6, 455, 356, 3999, 2299, 20000];
+	    let large_num = get_largest(num_list);
+	    println!("The largest is {:?}", large_num);
+	
+fef6a0a0f8bb8a32b9b6f91749740768|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|6|1|V|rust
+	cgt()
+cb3f85ad52838f2c27f61b186f2b0d34|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|3|1|V|rust
+	    a + b;
+	    }
+3b175f4412f0ec8b5f831a2c79cf7832|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|2|5|v|rust
+	fn add(a, b) -> i32 {
+	    a + b;
+	    }
+	
+0a317aabf7549aee42730a0607877509|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|14|1|V|rust
+	        let add_2 = add(1,1)
+ac85827c812502e1ff83e5b1df46831c|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|14|20|V|rust
+	        assert_eq!(add_2, 2)
+	    }
+60683be927a58aca26073c7897120c2c|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|2|4|v|rust
+	 fn add(a: i32, b: i32) {
+	        a + b;
+	    }
+	
+d7b2882b6dd4d099ca0511d92bb68927|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|12|4|v|rust
+	 #[test]
+	    fn add_two_integer() {
+	        assert_eq!(2, add(1, 1))
+	    }
+	
+2f21b9a4b6ce7e346da08247628f5e6b|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|15|7|V|rust
+	    } #hh[test]
+	
+cc410d565c9c7d3f6dab1781e3ba4715|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|15|7|v|rust
+	#hh[test]
+	
+453bca5703d22758f45773b5f87bb086|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|4|1|v|rust
+	fn add(a: i32, b: i32) {
+	    a + b;
+	}
+	
+6587b9ef78c63ab583de495c64a307f5|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|7|1|V|rust
+	#[cfg(test)]
+	mod test {
+c64327209fa21936d8151f132ec71ff2|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|2|5|v|rust
+	pub fn add(a: i32, b: i32) {
+	        a + b;
+	    }
+	
+b6c3b96d8a0f2ae9ef8472c28778c687|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|2|1|v|rust
+	pub fn add(a: i32, b: i32) {
+	    a + b;
+	}
+	
+	#[cfg(test)]
+	mod test {
+	    use super::*;
+	
+	    #[test]
+	    fn add_two_integer() {
+	        assert_eq!(2, add(1, 1))
+	    }
+	
+	    #[test]
+	    fn not_add_two_integer() {
+	        assert_eq!(3, add(1, 1))
+	    }
+	}
+56b825dfe8fa0765a4b36a9b3dd396eb|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|2|1|v|rust
+	 pub fn add(a: i32, b: i32) {
+	    a + b;
+	}
+	
+	#[cfg(test)]
+	mod test {
+	    use super::*;
+	
+	    #[test]
+	    fn add_two_integer() {
+	        assert_eq!(2, add(1, 1))
+	    }
+	
+	    #[test]
+	    fn not_add_two_integer() {
+	        assert_eq!(3, add(1, 1))
+	    }
+	}
+a4a55ce9f473647593373f1c7af73f67|file:///Users/mohamedbgassama/rust_project/gens_rust/src/main.rs|2|1|v|rust
+	 pub fn add(a: i32, b: i32) {
+	    a + b;
+	}
+	
+	#[cfg(test)]
+	mod test {
+	    use super::*;
+	
+	    #[test]
+	    fn add_two_integer() {
+	        assert_eq!(2, add(1, 1))
+	    }
+	
+	    #[test]
+	    fn not_add_two_integer() {
+	        assert_eq!(3, add(1, 1))
+	    }
+	}
+	
+a956af09162870af6ce4ebe0f12ccaf8|file:///Users/mohamedbgassama/rust_project/mimigrep/src/main.rs|1|11|v|rust
+	args
+f80259647dec070acae74295befc0e6e|file:///Users/mohamedbgassama/rust_project/mimigrep/src/main.rs|5|14|V|rust
+	    println!("Hello, world!");
+	}
+cb3a0b36badf409a77ab2fa84229309d|file:///Users/mohamedbgassama/rust_project/mimigrep/src/main.rs|4|40|v|rust
+	.collect
+27118326006d3829667a400ad23d5d98|file:///Users/mohamedbgassama/rust_project/mimigrep/src/main.rs|4|19|v|rust
+	String
+509bcf63e2462e1ca4d8d1978534df47|file:///Users/mohamedbgassama/rust_project/mimigrep/src/main.rs|1|13|v|rust
+	::args;
+435ed7e9f07f740abf511a62c00eef6e|file:///Users/mohamedbgassama/rust_project/mimigrep/src/main.rs|6|9|v|rust
+	filename
+9af434c785cd4209d1b17b4cf53f53dd|file:///Users/mohamedbgassama/rust_project/mimigrep/src/main.rs|9|15|v|rust
+	{:?}
+d675faab871462aad1b585df0ede7026|file:///Users/mohamedbgassama/rust_project/mimigrep/src/main.rs|9|5|V|rust
+	    println!("Searching for {}", args);
+167aafc06e926305f3efc9870522edd9|file:///Users/mohamedbgassama/rust_project/mimigrep/src/main.rs|6|24|v|rust
+	.clone
+593acf54fe2005c60a6aabca7d9a0c99|file:///Users/mohamedbgassama/rust_project/mimigrep/src/main.rs|12|48|v|rust
+	unwrap
+1be78dc61eea10e15910088be9e8137b|file:///Users/mohamedbgassama/rust_project/mimigrep/src/main.rs|6|1|v|rust
+	    let query = &args[1];
+	    let filename = &args[2];
+	
+	
+93318552586e2ccea76cf20a21e3a2fb|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|5|1|v|rust
+	        let result = 2 + 2;
+	        assert_eq!(result, 4);
+	
+e11185b6e35c1b767174dc988aa0f179|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|4|14|v|rust
+	fail
+99c555b1d10d90406414839c185ff7c1|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|7|2|V|rust
+	    #[should_panic(expected = "assertion failed")]
+fc70b6e5afcfe709ae1450a5adbd39b1|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|3|5|v|rust
+	fn add_two(a: i32) -> i32 {
+	        a + 2
+	    }
+	
+828d57ef89528482200f53584c5d2122|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|14|8|v|rust
+	it_works
+f3cef65d3b6a0081dc4eb002f98a9dfe|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|15|8|v|rust
+	 assert_eq!(0, sub_two(2));
+	
+37918f10749cd6df92ab34cd85b9c773|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|11|16|v|rust
+	add_two, sub_two};
+	
+69640903ad46cca4a186d1ae99eee843|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|9|1|v|rust
+	#[cfg(test)]
+	mod tests {
+	    use super::*;
+	
+	    #[test]
+	    fn add_test() {
+	        assert_eq!(4, add_two(2));
+	    }
+	
+	    #[test]
+	    fn sub_test() {
+	        assert_eq!(0, sub_two(2));
+	    }
+	}
+8926b78322a1a84d1dba6798486eb321|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|1|1|v|rust
+	#[allow(dead_code)]
+	fn add_two(a: i32) -> i32 {
+	    a + 2
+	}
+	#[allow(dead_code)]
+	fn sub_two(b: i32) -> i32 {
+	    b - 2
+	}
+	
+	
+b4202ab566472bbebbe137bcafaee7bb|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|1|1|v|rust
+	#[allow(dead_code)]
+	fn add_two(a: i32) -> i32 {
+	    a + 2
+	}
+	#[allow(dead_code)]
+	fn sub_two(b: i32) -> i32 {
+	    b - 2
+	}
+b71b861436456e6e6db56653f8289730|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|30|1|V|rust
+	    #[test]
+	    fn sub_test() {
+d71b7370f5ea297be2b1f13548ee7a91|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|30|1|V|rust
+	        assert_eq!(0, sub_two(2));
+dc8dc8f707a1032c248e10986b252308|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|30|1|v|rust
+	    #[test]
+	    fn sub_test() {
+	        assert_eq!(0, sub_two(2));
+	    }
+	
+4c8c35d73a9dddce60d4139ce4daa4be|file:///Users/mohamedbgassama/rust_project/mariama_site/index.html|6|8|v|html
+	 body{
+	            background-color: darkslategrey;
+	        }
+	        p{
+	            color:olive;
+	            font-family: cursive;
+	        }
+	        h1{
+	            font-weight: bold;
+	            text-align: center;
+	            font-family: Georgia, 'Times New Roman', Times, serif;
+	            color: greenyellow;
+	            text-shadow: -5px 5px black;
+	        }
+	        h3{
+	            text-align: center;
+	            font-family: Georgia, 'Times New Roman', Times, serif;
+	            color:green;
+	        }
+	        h2{
+	            color:orangered;
+	            text-shadow: -5px 5px black;
+	        }
+	        img{
+	            border-radius: 20px;
+	            border-style: solid;
+	       width: 200px;
+	       Height: 200px;
+	       float:unset;
+	       border-color: darkseagreen;
+	       }
+	       li{
+	           font-size 24px;
+	           color: darkcyan;
+	            }
+	      h2{
+	          text-align: left;
+	            }
+	
+cb1bce1f1985ff0cbff3a5f9c6400f98|file:///Users/mohamedbgassama/rust_project/mariama_site/index.html|5|5|V|html
+	    <style></style>
+0d633bfe84901d3c7376fe096dbc72fa|file:///Users/mohamedbgassama/rust_project/mariama_site/index.html|5|5|V|html
+	        <style></style>
+f8a031c829f069f1be119aa337b1d210|file:///Users/mohamedbgassama/code/rust-project/hack_reactor_prep_rust_v/src/module_one/add_fullname_property.rs|1|1|v|rust
+	pub fn add_fullname_property(s) {
+	    s.fullname = println!("{} {}", s.firstname, s.las)
+	    s
+	}
+ad6e7652b1bdfb38783486c2c3d5e806|file:///Users/mohamedbgassama/code/rust-project/hack_reactor_prep_rust_v/src/module_one/add_fullname_property.rs|10|13|v|rust
+	Self
+590f53e8699817c6fa498cc11a4cbe63|file:///Users/mohamedbgassama/code/rust-project/hack_reactor_prep_rust_v/src/module_one/add_fullname_property.rs|10|57|v|rust
+	self
+46c527eb9b43ac468c28793395b5567e|file:///Users/mohamedbgassama/code/rust-project/hack_reactor_prep_rust_v/src/module_one/add_fullname_property.rs|18|44|v|rust
+	&str
+7dbc7b29c0c49bcfd5c4a18740e06e80|file:///Users/mohamedbgassama/code/rust-project/hack_reactor_prep_rust_v/src/main.rs|1|1|v|rust
+	extern
+c376c2771175305cbcbfae18393651fa|file:///Users/mohamedbgassama/code/rust-project/hack_reactor_prep_rust_v/src/main.rs|1|1|v|rust
+	use module_one;
+a95b9423c222ef694d54abd96fc3d729|file:///Users/mohamedbgassama/code/rust-project/hack_reactor_prep_rust_v/src/main.rs|3|2|V|rust
+	 moule_one::add_fullname_property::{add_fullname_property, Person};
+5b41e05224d560908fb0e8ed61c24582|file:///Users/mohamedbgassama/code/rust-project/hack_reactor_prep_rust_v/src/main.rs|1|1|V|rust
+	use crate module_one;
+a030c3ff0248e1e03727a4967cbf61d6|file:///Users/mohamedbgassama/code/rust-project/hack_reactor_prep_rust_v/src/main.rs|2|15|v|rust
+	::add_fullname_property::{add_fullname_property, Person};
+	
+b4a90d2e9f5444196870c4e86fbae0d7|file:///Users/mohamedbgassama/code/rust-project/hack_reactor_prep_rust_v/src/main.rs|4|1|V|rust
+	module_one::add_fullname_property::Person;
+b97e0dbee4def8c77daf6d35d82acfd7|file:///Users/mohamedbgassama/code/rust-project/hack_reactor_prep_rust_v/src/main.rs|4|5|V|rust
+	    let me = Person::new("Mohamed", "Gassama");
+8c67f84103b5718d911a4977d1c10df0|file:///Users/mohamedbgassama/code/rust-project/hack_reactor_prep_rust_v/src/main.rs|2|1|V|rust
+	use module_one::add_fullname_property::Person;
+6cb7827f5341e73877f975f30531788a|file:///Users/mohamedbgassama/rust_project/available/src/lib.rs|1|1|v|rust
+	marco_rules! add {
+	  ($($val), *)
+	}
+	
+07ac0c7245cd1a02dc8ec17a3a41f312|file:///Users/mohamedbgassama/rust_project/available/src/math/add.rs|15|4|v|rust
+	empty_add
+83cef254a27b680bf6bf6016d16c2580|file:///Users/mohamedbgassama/rust_project/available/src/lib.rs|1|1|V|rust
+	#[macro_use]
+d3ec171b6c140c5f9686635641459a01|file:///Users/mohamedbgassama/rust_project/available/src/lib.rs|1|1|V|rust
+	        let result = 2 + 2;
+43df4483f49bc53ddf3568bd7caa3f77|file:///Users/mohamedbgassama/rust_project/available/src/lib.rs|1|1|V|rust
+	use math::add;
+301254b7a439f5730651edf20f2c5bea|file:///Users/mohamedbgassama/rust_project/available/src/lib.rs|8|3|v|rust
+	($expr: val_1, $expr: val_2) => {
+	     val_1  + val_2
+	  }
+	
+1dfb08910c0d71a04da1fbb990e044e4|file:///Users/mohamedbgassama/rust_project/available/src/lib.rs|25|1|v|rust
+	#[test]
+	fn add_two_integer() {
+	  let add_two: i32 = add!(2, 3);
+	  let assert_eq!(add_two,5)
+	}
+	
+0324d24d9bd096fe4613e23dac26e83e|file:///Users/mohamedbgassama/rust_project/available/src/lib.rs|47|9|V|rust
+	        let add_one: i32 = add!('1');
+2d5db524ad6894f4ca775586838c7a3d|file:///Users/mohamedbgassama/rust_project/available/src/lib.rs|16|8|v|rust
+	 $val_1 + 0
+	
+8d1dc3c660433f289282debc4dba780a|file:///Users/mohamedbgassama/rust_project/available/src/lib.rs|7|14|v|rust
+	expr
+d69dff41cc115965adfeaa0f58fed641|file:///Users/mohamedbgassama/rust_project/available/src/math/add.rs|8|12|v|rust
+	val_1
+428d23056992d532598389fc66e9e0c9|file:///Users/mohamedbgassama/rust_project/available/src/lib.rs|1|1|v|rust
+	#[macro_export]
+	macro_rules! add {
+	    () => {
+	        0
+	    };
+	
+	    ($val_1: ty) => {
+	        $val_1 + 0
+	    };
+	
+	    ($val_1: ty, $val_2: ty) => {
+	        $val_1 + $val_2
+	    };
+	}
+55dd53968d30aba5caee89b0096cd934|file:///Users/mohamedbgassama/rust_project/available/src/lib.rs|10|1|v|rust
+	    #[test]
+	    fn add_empty() {
+	        let n: i32 = add!();
+	        assert_eq!(n, 0)
+	    }
+	
+	    #[test]
+	    fn add_one() {
+	        let add_one: i32 = add!(1);
+	        assert_eq!(add_one, 1)
+	    }
+	
+	    #[test]
+	    fn add_two_interger() {
+	        let add_two: i32 = add!(3, 7);
+	        assert_eq!(add_two, 10)
+	    }
+	
+cee7d62b67781648d6b6b72f6e168db8|file:///Users/mohamedbgassama/rust_project/available/src/math/divide.rs|10|1|V|rust
+	#[tests]
+19f04b74e332a6612c2bf59960512ecb|file:///Users/mohamedbgassama/rust_project/guessing_game/src/main.rs|3|11|v|rust
+	Guess a Number!
+a482a623c39355a5d41ab737390ad1e7|file:///Users/mohamedbgassama/rust_project/guessing_game/src/main.rs|22|45|v|rust
+	expect("Please type a number");
+	
+b0c716a0bbe25526fe54c89c01870d80|file:///Users/mohamedbgassama/rust_project/guessing_game/src/main.rs|10|4|V|rust
+	    println!("Your secret number is: {}", secret_number);
+15979be7675679027ad6eab4c6c97cac|file:///Users/mohamedbgassama/rust_project/guessing_game/src/main.rs|19|9|v|rust
+	println!("You guessed: {}", guess);
+	
+	
+d70baa9c4bd5e5cf1b8329ba8114f2b9|file:///Users/mohamedbgassama/rust_project/actix-diesel-auth/src/models.rs|13|1|v|rust
+	#[derive(Debug, Serialize, Deserialize, Queryable)]
+	pub struct Posts {
+	    pub id: i32,
+	    pub name: String,
+	    pub body: String,
+	    pub created_at: chrono::NaiveDateTime,
+	}
+	
+0249b0a3505700d6649114b9d4511f68|file:///Users/mohamedbgassama/rust_project/web_app_actix/src/main.rs|1|64|v|rust
+	Reponder
+7abe9333f03b04d0fa5c583560085899|file:///Users/mohamedbgassama/rust_project/web_app_actix/src/main.rs|30|12|v|rust
+	jl127
+67ff32d40fb51f1a2fd2c4f1b1019785|file:///Users/mohamedbgassama/rust_project/web_app_actix/src/main.rs|30|18|v|rust
+	8000
+8d93881499fe5d87c279fe119d46bcd6|file:///Users/mohamedbgassama/.config/nvim/init.vim|597|20|V|vim
+	nnoremap <silent> <leader>dd <Plug>(coc-definition)
+b401f5e1e80aa489d1d8c76d81137884|file:///Users/mohamedbgassama/.config/nvim/init.vim|597|20|V|vim
+	nnoremap <silent> <leader>dr <Plug>(coc-references)
+4a26f777e1fb1892acb8389760fece75|file:///Users/mohamedbgassama/.config/nvim/init.vim|597|20|V|vim
+	nnoremap <silent> <leader>dj <Plug>(coc-implementation)
+	nnoremap <silent> <leader>ds :<C-u>CocList -I -N --top symbols<CR>
+1d0b3f7402e099ff54e2f0512ac343cb|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|14|1|V|rust
+	/// use adder::add_two;
+59ea6552892d1481d59172e0d6e643e6|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|15|1|V|rust
+	/// assert_eq!(4, add_two(2));
+d3497fea566d130f7fdcdc5d97287e4a|file:///Users/mohamedbgassama/rust_project/rust_mod_eple/src/lib.rs|22|1|v|rust
+	mod tests {
+	    use super::*;
+	
+	    #[test]
+	    fn add_test() {
+	        
+f1bbda6f6977b3c89007777008128159|file:///Users/mohamedbgassama/rust_project/rust_mode/src/main.rs|10|5|v|rust
+	println!("What is your name?");
+	    let mut name: String = String::new();
+	    let greeting: &str = "Nice to meet you";
+	    io::stdin()
+	        .read_line(&mut name)
+	        .expect("Didn't Receive Input");
+	    println!("Hello, {}! {}", name.trim_end(), greeting);
+	
+83327272baca1b3058f875dea0c78349|file:///Users/mohamedbgassama/rust_project/rust_mode/src/main.rs|11|28|v|rust
+	MAX::
+e1b8189bf45ae403ec242615d169c6d4|file:///Users/mohamedbgassama/rust_project/rust_mode/src/main.rs|10|20|V|rust
+	    println!("MAX u32 {}", u32::MAX);
+	    println!("MAX u32 {}", u32::MAX);
+e6807bc5be4e0266c801ea31a1e1925a|file:///Users/mohamedbgassama/rust_project/rust_mode/src/main.rs|10|5|V|rust
+	    println!("MAX u64 {}", u64::MAX);
+2f278c3a6b7daa19145fd0d638bb914f|file:///Users/mohamedbgassama/rust_project/rust_mode/src/main.rs|12|5|V|rust
+	    println!("MAX i32 {}", i32::MAX);
+1e71d7985560cf34554ad8b34042a6fe|file:///Users/mohamedbgassama/rust_project/rust_mode/src/main.rs|10|4|V|rust
+	    println!("MAX usize {}", usize::MAX);
+647748deb32354927da30a09dbf7d509|file:///Users/mohamedbgassama/rust_project/rust_mode/src/main.rs|10|4|V|rust
+	    println!("MAX usize {}", usize::MAX);
+	    println!("MAX isize {}", isize::MAX);
+db4cf9004ad97dc6de621d232a61448b|file:///Users/mohamedbgassama/rust_project/rust_mode/src/main.rs|10|3|v|rust
+	  println!("Hey what your name?");
+	    let mut name: String = String::new();
+	    let gretting: &str = "Nice to meet you";
+	    io::stdin()
+	        .read_line(&mut name)
+	        .expect("Input text text required!");
+	    println!("Hello {}! {}", name.trim_end(), gretting)
+	

@@ -1,0 +1,14 @@
+{
+  "suggest.echodocSupport": true,
+  "suggest.maxCompleteItemCount": 20,
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact","ts","json", "javascriptreact", "typescript.tsx", "py", "python", "css", "scss", "html"],
+  "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
+  "python.pythonPath": "python3",
+  "python.jediEnabled": true,
+  "diagnostic.errorSign": "•",
+  "diagnostic.warningSign": "•",
+  "diagnostic.infoSign": "•",
+  "eslint.enable": false,
+
+}
+

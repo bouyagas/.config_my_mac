@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/mohamedbgassama/code/dockerTutorial/frontend'
+let g:netrw_dirhist_6='/Users/mohamedbgassama/jarvis/config/nvim'
+let g:netrw_dirhist_5='/Users/mohamedbgassama/.config/nvim'
+let g:netrw_dirhist_4='/Users/mohamedbgassama/.config'
+let g:netrw_dirhist_3='/Users/mohamedbgassama/.config/syntax'
+let g:netrw_dirhist_2='/Users/mohamedbgassama/.config'
+let g:netrw_dirhist_1='/Users/mohamedbgassama/.config/nvim'
